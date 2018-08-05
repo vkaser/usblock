@@ -1,0 +1,54 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1a8d9ec9-d41d-4514-8add-393df3fcb91e}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="Agent.cbproj" />
+    <Projects Include="Explor.cbproj" />
+    <Projects Include="USBlock.cbproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="USBlock">
+    <MSBuild Projects="USBlock.cbproj" Targets="" />
+  </Target>
+  <Target Name="USBlock:Clean">
+    <MSBuild Projects="USBlock.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="USBlock:Make">
+    <MSBuild Projects="USBlock.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="Agent">
+    <MSBuild Projects="Agent.cbproj" Targets="" />
+  </Target>
+  <Target Name="Agent:Clean">
+    <MSBuild Projects="Agent.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="Agent:Make">
+    <MSBuild Projects="Agent.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="Explor">
+    <MSBuild Projects="Explor.cbproj" Targets="" />
+  </Target>
+  <Target Name="Explor:Clean">
+    <MSBuild Projects="Explor.cbproj" Targets="Clean" />
+  </Target>
+  <Target Name="Explor:Make">
+    <MSBuild Projects="Explor.cbproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="USBlock;Agent;Explor" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="USBlock:Clean;Agent:Clean;Explor:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="USBlock:Make;Agent:Make;Explor:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

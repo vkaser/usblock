@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013.04.21 13:36:05.478.cbproj,C:\Users\Администратор\Documents\RAD Studio\Projects\Project9.cbproj=C:\Users\Администратор\Documents\RAD Studio\Projects\Project9.cbproj</Transaction>
+    <Transaction>2013.04.22 20:08:49.657.cbproj,C:\Users\Администратор\Documents\RAD Studio\Projects\Project9.cbproj=C:\Users\Администратор\Documents\RAD Studio\Projects\Agent.cbproj</Transaction>
+    <Transaction>2013.06.15 10:45:12.064.cpp,C:\Users\VKASER\Desktop\прога\Unit1.cpp=C:\Users\VKASER\Desktop\прога\Mod.cpp</Transaction>
+    <Transaction>2013.06.15 10:45:12.075.h,C:\Users\VKASER\Desktop\прога\Unit1.h=C:\Users\VKASER\Desktop\прога\Mod.h</Transaction>
+    <Transaction>2013.06.15 10:45:12.075.dfm,C:\Users\VKASER\Desktop\прога\Unit1.dfm=C:\Users\VKASER\Desktop\прога\Mod.dfm</Transaction>
+    <Transaction>2013.06.15 10:58:03.586.cpp,C:\Users\VKASER\Desktop\прога\Mod.cpp=</Transaction>
+    <Transaction>2013.06.15 10:58:03.586.dfm,C:\Users\VKASER\Desktop\прога\Mod.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>
